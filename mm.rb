@@ -24,7 +24,7 @@ elsif input_val1 == 2
   puts "メモの内容を入力してください。"
   puts "完了したらCtrl + Dを押してください。"
 
- input_memo = readlines
+ input_memo = STDIN.read
  memo = input_memo.chomp
 
  CSV.open("#{file_name}.csv","a") do |csv|
